@@ -1,0 +1,185 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  color: #446;
+  background: #EEE;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  min-width: 400px;
+  min-height: 200px;
+  margin: auto;
+}
+
+#description {
+  text-align: center;
+}
+
+#description h2 span {
+  color: #E22;
+}
+
+#portfolio-items > .item {
+  position: relative;
+  float: left;
+  width: 400px;
+  height: 200px;
+	background-color: #DDD;
+	border-radius: 8px;
+	box-shadow: 8px 8px 8px #aaa;
+	font-family: sans-serif;
+  margin: 10px;
+}
+
+@media (max-width: 420px) {
+  #portfolio-items .item {
+    margin: 10px 0;
+  }
+}
+
+.image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.item:hover > .info {
+  opacity: 1;
+}
+
+.info {
+  opacity: 0;
+}
+
+.item .info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  transition: opacity 750ms;
+  font-weight: 300;
+}
+
+.info button {
+  position: absolute;
+  width: 320px;
+  right: 40px;
+  bottom: 10px;
+}
+
+.info .title {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 5px 0;
+  font-weight: bold;
+  color: #E22;
+}
+
+.info .description {
+  padding: 5px 20px;
+  max-height: 115px;
+  overflow: hidden;
+  letter-spacing: .3px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  right: 0;
+  border-top: 1px solid grey;
+  background-color: #446;
+  color: white;
+  text-align: center;
+  min-width: 320px;
+}
+
+#footer span {
+  position: relative;
+  top: 15px;
+  font-family: monospace;
+  font-size: 1.5em;
+}
+
+#footer button {
+  position: absolute;
+  padding: 0;
+  right: 20px;
+  bottom: 10px;
+  height: 30px;
+  width: 100px;
+  box-shadow: 2px 2px 2px #999;
+}
+
+#footer button:hover {
+  box-shadow: 4px 4px 8px #999;
+}
+
+@media (max-width: 500px) {
+  #footer button {
+    display: none;
+  }
+}
+
+button {
+	float: right;
+	background-color: #CCC;
+	border: none;
+  padding: 6px 15px;
+	border-radius: 2px;
+	box-shadow: 2px 2px 2px #aaa;
+	transition: transform 1s, background-color 1s, box-shadow 1s;
+}
+
+button:hover {
+	background-color: #EEE;
+	transform: scale(1.2);
+	box-shadow: 4px 4px 8px #aaa;
+}
+
+button:focus {
+	outline: none;
+}
+
+.button-awesome {
+  background-color: transparent;
+  box-shadow: none;
+  color: #446;
+  font-weight: bold;
+  transition: box-shadow 1s, color 1s, background-color 2s, transform 1s;
+}
+
+.button-awesome:hover {
+  background-color: #FF6;
+  color: #446;
+}
+
+.button-good {
+  background-color: lightgreen;
+}
+
+.button-good:hover {
+  background-color: #5f6;
+}
+
+.button-bad {
+  
+}
+
+.button-bad:hover {
+  
+}
+
+.button-info {
+  
+}
+
+.button-info:hover {
+  
+}

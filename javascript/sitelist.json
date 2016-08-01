@@ -1,0 +1,27 @@
+[
+  {
+    "title":"Personal Page",
+    "description":"My Personal Page. This was the first site I ever created.",
+    "image": "Personal-Site",
+    "link": "http://www.jasongodson.com"
+  },
+  {
+    "title":"HighCharts Example",
+    "description":"Example site I created to get some more experience with the HighCharts library and API's.",
+    "image": "HighStock-Oil",
+    "link": "http://jgodson.github.io/highstock-oil/"
+  },
+  {
+    "title":"Dynamic Modal",
+    "description":"Example site of a single modal populated with data from a JSON file using a get request",
+    "image": "Dynamic-Modal",
+    "link": "http://jgodson.github.io/dynamic-modal/"
+  },
+  {
+    "title":"Torrent Notifier",
+    "description":"Cross platform desktop application created with electron.js. Allows adding of favourite shows to track on a calendar and notify when available as a torrent. Automatic opening of torrent client is also supported. Follow the link below to see more screenshots and code.",
+    "image": "Torrent-Notifier",
+    "link": "https://github.com/jgodson/torrent-notifier",
+    "buttonText": "VIEW ON GITHUB"
+  }
+]
