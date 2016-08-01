@@ -1,5 +1,4 @@
-const NUM_PLACEHOLDERS = 12;
-
+// Site Constructor
 var Site = function Site(siteInfo) {
   this.title = siteInfo.title || "No title",
   this.description = siteInfo.description || "No description",
@@ -15,7 +14,7 @@ var Site = function Site(siteInfo) {
    <div class='info'>
      <div class='title'>${this.title}</div>
      <div class='description'>${this.description}</div>
-     <a href='${this.link}'><button class='button-awesome' role='button'>${this.buttonText}</button></a>
+     <a href='${this.link}' target='_blank'><button class='button-awesome' role='button'>${this.buttonText}</button></a>
    </div>
   </div>`
 }
@@ -24,12 +23,11 @@ $(document).ready( function() {
   // Get the sites data from seperate file
   $.get('/javascript/sitelist.json', function(data) {
     $('#portfolio-items').html('');
-    for (let i = 0; i < data.length; i++) {
+    for (var i = 0; i < data.length; i++) {
       data[i] = new Site(data[i]);
     }
-    for (let i=0; i < NUM_PLACEHOLDERS; i++) {
-      data.push(new Site({}));
-    }
+
+    // append all the Sites to the portfolio-items div
     data.forEach(function(site) {
       $('#portfolio-items').append(site.html);
     });
@@ -37,7 +35,7 @@ $(document).ready( function() {
     resizeWrapper(); // initial sizing
   });
   
-  $(window).resize(resizeWrapper); // resize columns on change in width
+  $(window).resize(resizeWrapper); // resize columns on change in window size
 });
 
 // Calculate number of columns and items and resize wrapper accordingly

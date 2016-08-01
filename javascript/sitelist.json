@@ -1,19 +1,19 @@
 [
   {
     "title":"Personal Page",
-    "description":"My Personal Page. This was the first site I ever created.",
+    "description":"My Personal Page. This was the first site I ever created all by myself. This project uses JavaScript, Bootstrap and jQuery.",
     "image": "Personal-Site",
     "link": "http://www.jasongodson.com"
   },
   {
     "title":"HighCharts Example",
-    "description":"Example site I created to get some more experience with the HighCharts library and API's.",
+    "description":"Example site I created to get some more experience with the HighCharts library and API's. This project uses JavaScript, Bootstrap, jQuery and the HighCharts library. Also uses the quandl API.",
     "image": "HighStock-Oil",
     "link": "http://jgodson.github.io/highstock-oil/"
   },
   {
     "title":"Dynamic Modal",
-    "description":"Example site of a single modal populated with data from a JSON file using a get request",
+    "description":"Example site of a single modal populated with data from a JSON file using a get request. This project uses JavaScript, Bootstrap and jQuery.",
     "image": "Dynamic-Modal",
     "link": "http://jgodson.github.io/dynamic-modal/"
   },
@@ -23,5 +23,36 @@
     "image": "Torrent-Notifier",
     "link": "https://github.com/jgodson/torrent-notifier",
     "buttonText": "VIEW ON GITHUB"
+  },
+  {
+    "title":"Cloud Journal",
+    "description":"Very simple site that lets you save what you type into a text field. One of my first three projects in PHP, JavaScript and jQuery.",
+    "image": "Cloud-Journal",
+    "link": "https://web193.secure-secure.co.uk/jasongodson.com/projects/mysql/index.php"
+  },
+  {
+    "title":"Weather Forecaster",
+    "description":"Enter a city and it will return a short summary of weather conditions for that city. This project uses PHP, JavaScript and jQuery.",
+    "image": "Weather-Forecaster",
+    "link": "http://www.jasongodson.com/projects/weatherForecaster.php"
+  },
+  {
+    "title":"Postal Code Lookup",
+    "description":"Allows you to look up the postal code for a given address. Also shows given address location on a Google Map. This project uses PHP, JavaScript, jQuery and a few Google Maps API's.",
+    "image": "Postal-Code-Lookup",
+    "link": "http://www.jasongodson.com/projects/api/postalcodelookup.php"
+  },
+  {
+    "title":"Arduino - Sun Sensor",
+    "description":"I really enjoy working with microcontrollers and electronics as well. This was my very first project using Arduino that I completed myself. Link to code and wiring diagram is avaialble if you follow the youTube link below.",
+    "image": "Arduino",
+    "link": "https://www.youtube.com/watch?v=4uQM8Onsxfw&feature=youtu.be",
+    "buttonText": "VIEW ON YOUTUBE"
+  },
+  {
+    "title":"Temperature Recorder",
+    "description":"I set this up as my first foray into the HighCharts library. It uses a script running on Microsoft Azure to get temperature data from two sources and stores it in a Google Spreadsheet. Uses JavaScript, HighCharts Library, and OpenWeather API.",
+    "image": "Temp-Data",
+    "link": "http://www.jasongodson.com/#tempData"
   }
 ]

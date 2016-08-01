@@ -53,6 +53,7 @@ html, body {
 
 .info {
   opacity: 0;
+  cursor: pointer; /* Allow mobile 'hover' by touching */
 }
 
 .item .info {
