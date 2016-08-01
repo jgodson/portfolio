@@ -6,8 +6,8 @@ var Site = function Site(siteInfo) {
     : "http://placehold.it/400x200",
   this.link = siteInfo.link || '#',
   this.buttonText = siteInfo.buttonText || 'VIEW LIVE SITE',
-  this.html =  
-`<div class='item'>
+  this.html =  // onclick to make hover work on mobile
+`<div class='item' onclick=''>
    <div class='image'>
      <img src="${this.image}" />
    </div>
@@ -21,7 +21,7 @@ var Site = function Site(siteInfo) {
 
 $(document).ready( function() {
   // Get the sites data from seperate file
-  $.get('/javascript/sitelist.json', function(data) {
+  $.get('./javascript/sitelist.json', function(data) {
     $('#portfolio-items').html('');
     for (var i = 0; i < data.length; i++) {
       data[i] = new Site(data[i]);
