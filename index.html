@@ -6,20 +6,31 @@
     <meta name="author" content="Jason Godson">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jason Godson's Portfolio Page</title>
-    
     <link rel='stylesheet' href='./css/custom.css'>
   </head>
   <body>
-    <div id='wrapper'>
-      <div id='description'>
+    <div id='description-container'>
+      <div id='profile-picture'>
+        <div>
+          <div id='buttons'>
+
+          </div>
+          <img src='./images/profile.png' alt='profile picture' />
+        </div>
+      </div>
+      <div id='intro'>
         <h2>Welcome to <span>Jason Godson's</span> Portfolio!</h2>
         <h4>Please browse some of my previous work and examples below.</h4>
       </div>
+    </div>
+    <div id='wrapper'>
       <!-- portfolio-items is JavaScript generated content -->
       <div id='portfolio-items'>Loading...</div>
       <div id='footer'>
         <span>&copy; 2016 Jason Godson</span>
-        <button class='button-good' role='button'>Hire Me!</button>
+        <a href="mailto:jason@jasongodson.com">
+        <button class='button-good' role='button'>HIRE ME!</button>
+        </a>
       </div>
     </div>
   </body>

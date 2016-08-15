@@ -1,4 +1,10 @@
 [
+    {
+    "title":"Check In App",
+    "description":"This is my biggest project by far. Allows admin to sign up, create users and set required intervals for check ins. Users can check in and admin will be notified when they are late. Code, more info and credentials on <a href='https://github.com/jgodson/checkinapp'>GitHub</a>.",
+    "image": "Check-In-App",
+    "link": "https://checkindevapp.herokuapp.com/admins/login"
+  },
   {
     "title":"Personal Page",
     "description":"My Personal Page. This was the first site I ever created all by myself. This project uses JavaScript, Bootstrap and jQuery.",
@@ -44,7 +50,7 @@
   },
   {
     "title":"Arduino - Sun Sensor",
-    "description":"I really enjoy working with microcontrollers and electronics as well. This was my very first project using Arduino that I completed myself. Link to code and wiring diagram is avaialble if you follow the youTube link below.",
+    "description":"I really enjoy working with microcontrollers and electronics as well. This was my very first project using Arduino that I completed myself. Link to code and wiring diagram is available if you follow the youTube link below.",
     "image": "Arduino",
     "link": "https://www.youtube.com/watch?v=4uQM8Onsxfw&feature=youtu.be",
     "buttonText": "VIEW ON YOUTUBE"

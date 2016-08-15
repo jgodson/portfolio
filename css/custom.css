@@ -3,7 +3,7 @@ html, body {
   height: 100%;
   font-family: sans-serif;
   color: #446;
-  background: #EEE;
+  background: #446;
   margin: 0;
   padding: 0;
 }
@@ -14,11 +14,38 @@ html, body {
   margin: auto;
 }
 
-#description {
+#description-container {
+  height: calc(100%);
+  display: table;
+  width: 100%;
+  min-width: 400px;
+  color: #EEE;
   text-align: center;
 }
 
-#description h2 span {
+#profile-picture {
+  display: table-row;
+  width: 100%;
+}
+
+#profile-picture > div {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+#profile-picture > div > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#intro {
+  width: 100%;
+  text-align: center;
+  display: table-row;
+}
+
+#intro h2 span {
   color: #E22;
 }
 
@@ -29,7 +56,7 @@ html, body {
   height: 200px;
 	background-color: #DDD;
 	border-radius: 8px;
-	box-shadow: 8px 8px 8px #aaa;
+	box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
 	font-family: sans-serif;
   margin: 10px;
 }
@@ -115,11 +142,11 @@ html, body {
   bottom: 10px;
   height: 30px;
   width: 100px;
-  box-shadow: 2px 2px 2px #999;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 #footer button:hover {
-  box-shadow: 4px 4px 8px #999;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 500px) {
@@ -134,14 +161,14 @@ button {
 	border: none;
   padding: 6px 15px;
 	border-radius: 2px;
-	box-shadow: 2px 2px 2px #aaa;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 	transition: transform 1s, background-color 1s, box-shadow 1s;
 }
 
 button:hover {
 	background-color: #EEE;
 	transform: scale(1.2);
-	box-shadow: 4px 4px 8px #aaa;
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 button:focus {
@@ -169,18 +196,27 @@ button:focus {
   background-color: #5f6;
 }
 
+a:hover {
+  font-weight: bold;
+}
+
+a {
+  color: #E22;
+  text-decoration: none;
+}
+
 .button-bad {
-  
+
 }
 
 .button-bad:hover {
-  
+
 }
 
 .button-info {
-  
+
 }
 
 .button-info:hover {
-  
+
 }
