@@ -4,17 +4,40 @@
     <meta name="description" content="Jason Godson's Personal Portfolio Page">
     <meta name="keywords" content="Portfolio, Jason, Godson, Examples, Projects, Developer, Web, Programmer">
     <meta name="author" content="Jason Godson">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
     <title>Jason Godson's Portfolio Page</title>
     <link rel='stylesheet' href='./css/custom.css'>
+    <link rel='stylesheet' href='./css/font-awesome.min.css'?
   </head>
   <body>
+    <div id='buttons'>
+      <div class='menu-item'>
+        <i class='fa fa-bars' aria-hidden='true'></i>
+      </div>
+      <div class='menu-item'>
+        <i class='fa fa-twitter' aria-hidden='true'></i>
+        <a href='https://twitter.com/jgodson88'></a>
+      </div>
+      <div class='menu-item'>
+        <i class='fa fa-github' aria-hidden='true'></i>
+        <a href='https://github.com/jgodson'></a>
+      </div>
+      <div class='menu-item'>
+        <i class='fa fa-linkedin' aria-hidden='true'></i>
+        <a href='https://ca.linkedin.com/in/jason-godson-677b048a'></a>
+      </div>
+      <div class='menu-item'>
+        <i class='fa fa-stack-overflow' aria-hidden='true'></i>
+        <a href='http://stackoverflow.com/users/5206878/jason-godson'></a>
+      </div>
+      <div class='menu-item'>
+        <i class='fa fa-usd' aria-hidden='true'></i>
+        <a href='mailto:jason@jasongodson.com?subject=Interested%20in%20hiring%20you'></a>
+      </div>
+    </div>
     <div id='description-container'>
       <div id='profile-picture'>
         <div>
-          <div id='buttons'>
-
-          </div>
           <img src='./images/profile.png' alt='profile picture' />
         </div>
       </div>
@@ -26,14 +49,22 @@
     <div id='wrapper'>
       <!-- portfolio-items is JavaScript generated content -->
       <div id='portfolio-items'>Loading...</div>
-      <div id='footer'>
-        <span>&copy; 2016 Jason Godson</span>
-        <a href="mailto:jason@jasongodson.com">
-        <button class='button-good' role='button'>HIRE ME!</button>
-        </a>
-      </div>
+    </div>
+    <div id='footer'>
+      <span>&copy; 2016 Jason Godson</span>
+      <a href="mailto:jason@jasongodson.com?subject=Interested%20in%20hiring%20you">
+      <button class='button-good' role='button'>HIRE ME!</button>
+      </a>
     </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+  // Menu click listener
+  $(document).ready(function() {
+    $('#buttons').click(function() {
+      $('#buttons').toggleClass('active');
+    });
+  });
+  </script>
   <script type='text/javascript' src='./javascript/scripts.js'></script>
 </html>
