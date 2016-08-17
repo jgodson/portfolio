@@ -31,7 +31,7 @@
         <a href='http://stackoverflow.com/users/5206878/jason-godson'></a>
       </div>
       <div class='menu-item'>
-        <i class='fa fa-usd' aria-hidden='true'></i>
+        <i class='fa fa-envelope-o' aria-hidden='true'></i>
         <a href='mailto:jason@jasongodson.com?subject=Interested%20in%20hiring%20you'></a>
       </div>
     </div>
@@ -63,6 +63,7 @@
   $(document).ready(function() {
     $('#buttons').click(function() {
       $('#buttons').toggleClass('active');
+      $('.menu-item:first-child i').toggleClass('fa-bars fa-times');
     });
   });
   </script>
