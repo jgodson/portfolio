@@ -14,7 +14,7 @@ var Site = function Site(siteInfo) {
    <div class='info'>
      <div class='title'>${this.title}</div>
      <div class='description'>${this.description}</div>
-     <a href='${this.link}' target='_blank'><button class='button-awesome' role='button'>${this.buttonText}</button></a>
+     <a href='${this.link}' target='_blank'><button role='button'>${this.buttonText}</button></a>
    </div>
   </div>`
 }
@@ -31,10 +31,10 @@ $(document).ready( function() {
     data.forEach(function(site) {
       $('#portfolio-items').append(site.html);
     });
-    
+
     resizeWrapper(); // initial sizing
   });
-  
+
   $(window).resize(resizeWrapper); // resize columns on change in window size
 });
 
@@ -52,7 +52,7 @@ function resizeWrapper() {
   else {
     $('#wrapper').width(numColumns * ELEMENT_SIZE[0]); // col layout view
   }
-  
+
   // Calculate height
   var numItems = $('.item').length;
   $('#portfolio-items').height(Math.ceil(numItems / numColumns) * ELEMENT_SIZE[1] + 61); // set height
