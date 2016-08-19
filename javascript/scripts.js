@@ -31,29 +31,5 @@ $(document).ready( function() {
     data.forEach(function(site) {
       $('#portfolio-items').append(site.html);
     });
-
-    resizeWrapper(); // initial sizing
   });
-
-  $(window).resize(resizeWrapper); // resize columns on change in window size
 });
-
-// Calculate number of columns and items and resize wrapper accordingly
-function resizeWrapper() {
-  var width = $(window).width();
-  var numColumns = 1;
-  const ELEMENT_SIZE = [420, 220]; // size of element [width, height] w/ padding
-  if (width > ELEMENT_SIZE[0] * 2) {
-    numColumns = Math.floor(width / ELEMENT_SIZE[0]); // calc width
-  }
-  if (width < 420) {
-    $('#wrapper').width(400); // mobile view
-  }
-  else {
-    $('#wrapper').width(numColumns * ELEMENT_SIZE[0]); // col layout view
-  }
-
-  // Calculate height
-  var numItems = $('.item').length;
-  $('#portfolio-items').height(Math.ceil(numItems / numColumns) * ELEMENT_SIZE[1] + 61); // set height
-}

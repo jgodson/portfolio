@@ -9,9 +9,7 @@ html, body {
 }
 
 #wrapper {
-  min-width: 400px;
-  min-height: 200px;
-  margin: auto;
+  padding-bottom: 60px;
 }
 
 #buttons {
@@ -96,10 +94,9 @@ html, body {
   height: 100%;
   display: table;
   width: 100%;
-  min-width: 400px;
   color: #EEE;
   text-align: center;
-  background: #282C34 url(../images/background.png) no-repeat fixed;
+  background: #282C34 url(../images/background.png) no-repeat;
   background-size: cover;
   font-family: monospace;
   font-size: 1.3rem;
@@ -133,22 +130,22 @@ html, body {
   color: #E22;
 }
 
+#portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #portfolio-items > .item {
   position: relative;
-  float: left;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: 200px;
   background-color: #DDD;
   border-radius: 8px;
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
   font-family: sans-serif;
-  margin: 10px;
-}
-
-@media (max-width: 420px) {
-  #portfolio-items .item {
-    margin: 10px 0;
-  }
+  margin: auto;
+  margin-top: 10px;
 }
 
 .image img {
@@ -178,8 +175,8 @@ html, body {
 
 .info button {
   position: absolute;
-  width: 320px;
-  right: 40px;
+  width: calc(100% - 20%);
+  right: 10%;
   bottom: 10px;
   background-color: transparent;
   font-weight: bold;
@@ -196,9 +193,9 @@ html, body {
 }
 
 .info .description {
-  padding: 5px 20px;
-  max-height: 115px;
-  overflow: hidden;
+  padding: 0 5px;
+  overflow: auto;
+  max-height: 120px;
   letter-spacing: .3px;
 }
 
