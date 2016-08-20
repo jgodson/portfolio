@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-page",
+  "version": "1.0.0",
+  "description": "My portfolio page up on http://www.jasongodson.com/portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgodson/portfolio.git"
+  },
+  "author": "Jason Godson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jgodson/portfolio/issues"
+  },
+  "homepage": "https://github.com/jgodson/portfolio#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0"
+  }
+}
