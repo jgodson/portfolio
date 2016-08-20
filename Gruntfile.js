@@ -1,17 +1,17 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     postcss: {
-        options: {
-            processors: [
-                require('autoprefixer')({
-                    browsers: ['> 1%']
-                })
-            ]
-        },
-        dist: {
-            src: 'dev/*.css',
-            dest: 'css/custom.css'
-        }
+      options: {
+          processors: [
+              require('autoprefixer')({
+                  browsers: ['> 1%']
+              })
+          ]
+      },
+      dist: {
+          src: 'dev/*.css',
+          dest: 'css/custom.css'
+      }
     },
     watch: {
       css : {

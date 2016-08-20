@@ -2,21 +2,22 @@
 var Site = function Site(siteInfo) {
   this.title = siteInfo.title || "No title",
   this.description = siteInfo.description || "No description",
-  this.image = siteInfo.image ? `http://www.jasongodson.com/public/images/project-images/${siteInfo.image}.png`
+  this.image = siteInfo.image ?
+    "http://www.jasongodson.com/public/images/project-images/" + siteInfo.image + ".png"
     : "http://placehold.it/400x200",
   this.link = siteInfo.link || '#',
   this.buttonText = siteInfo.buttonText || 'VIEW LIVE SITE',
   this.html =  // onclick to make hover work on mobile
-`<div class='item' onclick=''>
-   <div class='image'>
-     <img src="${this.image}" />
-   </div>
-   <div class='info'>
-     <div class='title'>${this.title}</div>
-     <div class='description'>${this.description}</div>
-     <a href='${this.link}' target='_blank'><button role='button'>${this.buttonText}</button></a>
-   </div>
-  </div>`
+    "<div class='item' onclick=''>" +
+      "<div class='image'>" +
+      "<img src='" + this.image + "' />" +
+    "</div>" +
+    "<div class='info'>" +
+      "<div class='title'>" + this.title + "</div>" +
+      "<div class='description'>" + this.description + "</div>" +
+      "<a href='" + this.link + "' target='_blank'><button role='button'>" + this.buttonText + "</button></a>" +
+      "</div>" +
+    "</div>"
 }
 
 $(document).ready( function() {
