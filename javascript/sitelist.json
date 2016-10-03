@@ -7,7 +7,7 @@
   },
   {
     "title":"Personal Page",
-    "description":"My Personal Page. This was the first site I ever created all by myself. This project uses JavaScript, Bootstrap and jQuery.",
+    "description":"My personal page. Updated October 2016 from my original. Mobile friendly and reponsive using plain HTML, CSS and JavaScript. PHP is also used for the Contact Form.",
     "image": "Personal-Site",
     "link": "http://www.jasongodson.com"
   },
@@ -59,6 +59,6 @@
     "title":"Temperature Recorder",
     "description":"I set this up as my first foray into the HighCharts library. It uses a script running on Microsoft Azure to get temperature data from two sources and stores it in a Google Spreadsheet. Uses JavaScript, HighCharts Library, and OpenWeather API.",
     "image": "Temp-Data",
-    "link": "http://www.jasongodson.com/#tempData"
+    "link": "http://www.jasongodson.com/tempchart.html"
   }
 ]
