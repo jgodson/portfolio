@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="description" content="Jason Godson's Personal Portfolio Page">
@@ -62,20 +63,18 @@
     </div>
     <div id='footer'>
       <span>&copy; 2016 Jason Godson</span>
-      <a href="mailto:jason@jasongodson.com?subject=Interested%20in%20hiring%20you">
-      <button role='button'>CONTACT ME!</button>
-      </a>
+      <a href="mailto:jason@jasongodson.com?subject=Interested%20in%20hiring%20you"><button>CONTACT ME!</button></a>
     </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">
+      // Menu click listener
+      $(document).ready(function() {
+        $('#buttons').click(function() {
+          $('#buttons').toggleClass('active');
+          $('.menu-item:first-child i').toggleClass('fa-bars fa-times');
+        });
+      });
+    </script>
+    <script type='text/javascript' src='./javascript/scripts.js'></script>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script>
-  // Menu click listener
-  $(document).ready(function() {
-    $('#buttons').click(function() {
-      $('#buttons').toggleClass('active');
-      $('.menu-item:first-child i').toggleClass('fa-bars fa-times');
-    });
-  });
-  </script>
-  <script type='text/javascript' src='./javascript/scripts.js'></script>
 </html>
