@@ -1,5 +1,12 @@
 [
-    {
+  {
+    "title":"Free Weather",
+    "description":"My lastest endevor. This is a simple weather app that I have released on both the <a href='https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1163834276&mt=8'>Apple App Store</a> and the <a href='https://play.google.com/store/apps/details?id=com.jasongodson.freeweather&hl=en'>Google Play Store</a>. I am working on updates, adding new features every few weeks. This was built using HTML, CSS and JavaScipt with Apache Cordova/PhoneGap.",
+    "image": "Free-Weather",
+    "link": "https://github.com/jgodson/freeweather",
+    "buttonText": "VIEW ON GITHUB"
+  },
+  {
     "title":"Check In App",
     "description":"This is my biggest project by far. Allows admin to sign up, create users and set required intervals for check ins. Users can check in and admin will be notified when they are late. Code, more info and credentials on <a href='https://github.com/jgodson/checkinapp'>GitHub</a>.",
     "image": "Check-In-App",
